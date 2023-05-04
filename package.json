@@ -1,0 +1,21 @@
+{
+  "name": "james-dark",
+  "displayName": "james-dark",
+  "description": "Custom dark theme for James",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.78.0"
+  },
+  "categories": [
+    "Themes"
+  ],
+  "contributes": {
+    "themes": [
+      {
+        "label": "James' Dark Theme",
+        "uiTheme": "vs-dark",
+        "path": "./themes/James' Dark Theme-color-theme.json"
+      }
+    ]
+  }
+}
