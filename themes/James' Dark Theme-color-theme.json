@@ -1,23 +1,246 @@
 {
 	"name": "James' Dark Theme",
 	"colors": {
-		"editor.background": "#263238",
-		"editor.foreground": "#eeffff",
+		"editor.background": "#303030",
+		"editor.foreground": "#c8c8c8",
 		"activityBarBadge.background": "#007acc",
-		"sideBarTitle.foreground": "#bbbbbb"
+		"sideBarTitle.foreground": "#bbbbbb",
+		"statusBar.background" : "#303030",
+		"statusBar.noFolderBackground" : "#222225",
+		"statusBar.debuggingBackground": "#511f1f"
 	},
 	"tokenColors": [
+		{
+			"name": "Strings",
+			"scope": [
+				"string",
+				"string.quoted.single"
+			],
+			"settings": {
+				"foreground": "#cdcd00"
+			}
+		},
+		{
+			"name": "Doc Strings",
+			"scope": [
+				"string",
+				"string.quoted.docstring.multi.python"
+			],
+			"settings": {
+				"foreground": "#bdbdbd"
+			}
+		},
 		{
 			"name": "Comment",
 			"scope": [
 				"comment",
-				"punctuation.definition.comment"
+				"comment.line.number-sign"
 			],
 			"settings": {
 				"fontStyle": "italic",
-				"foreground": "#546E7A"
+				"foreground": "#0baa13"
 			}
 		},
+		{
+			"name": "Punctuation Comment",
+			"scope": [
+				"punctuation",
+				"punctuation.definition.comment"
+			],
+			"settings": {
+				"foreground": "#0baa13"
+			}
+		},
+		{
+			"name": "Punctuation String",
+			"scope": [
+				"punctuation",
+				"punctuation.definition.string.begin.python",
+				"punctuation.definition.string.end.python",
+			],
+			"settings": {
+				"foreground": "#cdcd00"
+			}
+		},
+		{
+			"name": "Punctuation Parentheses",
+			"scope": [
+				"punctuation",
+				"punctuation.definition.parameters.begin",
+				"punctuation.definition.parameters.end"
+			],
+			"settings": {
+				"foreground": "#e9e6d6"
+			}
+		},
+		{
+			"name": "Punctuation Colon",
+			"scope": [
+				"punctuation",
+				"punctuation.section.function.begin",
+				"punctuation.section.class.begin",
+				"punctuation.separator.period.python"
+			],
+			"settings": {
+				"foreground": "#e5f5bd"
+			}
+		},
+		{
+			"name": "Keyword",
+			"scope": [
+				"keyword",
+				"keyword.control.flow.python",
+				"keyword.control.import.python"
+
+			],
+			"settings": {
+				"foreground": "#c21ed1"
+			}
+		},
+		{
+			"name": "Storage",
+			"scope": [
+				"storage",
+				"storage.type.class",
+				"storage.type.function"
+			],
+			"settings": {
+				"foreground": "#c21ed1"
+			}
+		},
+		{
+			"name": "Entity",
+			"scope": [
+				"entity",
+				"entity.name.type.class"
+			],
+			"settings": {
+				"foreground": "#22dce9"
+			}
+		},	
+		{
+			"name": "Function",
+			"scope": [
+				"entity",
+				"entity.name.function.python"
+			],
+			"settings": {
+				"foreground": "#81dfe6"
+			}
+		},
+		{
+			"name": "Self",
+			"scope": [
+				"variable",
+				"variable.language.special.self.python",
+				"variable.parameter.function.language.special.self.python"
+			],
+			"settings": {
+				"foreground": "#c57e21"
+			}
+		},
+		{
+			"name": "arg",
+			"scope": [
+				"variable",
+				"variable.parameter.function.language.python"
+			],
+			"settings": {
+				"foreground": "#c8c8c8"
+			}
+		},
+		{
+			"name": "Constant",
+			"scope": [
+				"constant",
+				"constant.other.caps.python"
+			],
+			"settings": {
+				"foreground": "#c8c8c8"
+			}
+		},
+		{
+			"name": "Variable Parameter",
+			"scope": [
+				"variable",
+				"variable.parameter.function-call.python"
+			],
+			"settings": {
+				"foreground": "#c8c8c8"
+			}
+		},
+		{
+			"name": "Number",
+			"scope": [
+				"constant",
+				"constant.numeric.dec.python"
+			],
+			"settings": {
+				"foreground": "#2291ff"
+			}
+		},
+		{
+			"name": "Object",
+			"scope": [
+				"support",
+				"support.type.python"
+			],
+			"settings": {
+				"foreground": "#c57e21"
+			}
+		},
+		{
+			"name": "Support Function",
+			"scope": [
+				"support",
+				"support.function.builtin.python"
+			],
+			"settings": {
+				"foreground": "#c57e21"
+			}
+		},
+		{
+			"name": "Meta Function",
+			"scope": [
+				"meta",
+				"meta.function-call.generic.python",
+				"meta.function-call.python"
+			],
+			"settings": {
+				"foreground": "#c8c8c8"
+			}
+		},
+		{
+			"name": "Decorators",
+			"scope": [
+				"meta",
+				"meta.function.decorator.python"
+			],
+			"settings": {
+				"foreground": "#4e9c52"
+			}
+		},
+		{
+			"name": "Function-Call",
+			"scope": [
+				"meta",
+				"meta.function-call.arguments.python"
+			],
+			"settings": {
+				"foreground": "#c8c8c8"
+			}
+		},
+		// {
+		// 	"name": "Comment",
+		// 	"scope": [
+		// 		"comment",
+		// 		"punctuation.definition.comment"
+		// 	],
+		// 	"settings": {
+		// 		"fontStyle": "italic",
+		// 		"foreground": "#546E7A"
+		// 	}
+		// },
 		{
 			"name": "Variables",
 			"scope": [
@@ -25,7 +248,7 @@
 				"string constant.other.placeholder"
 			],
 			"settings": {
-				"foreground": "#EEFFFF"
+				"foreground": "#c8c8c8"
 			}
 		},
 		{
@@ -34,7 +257,7 @@
 				"constant.other.color"
 			],
 			"settings": {
-				"foreground": "#ffffff"
+				"foreground": "#c8c8c8"
 			}
 		},
 		{
@@ -158,7 +381,7 @@
 				"entity.name",
 				"support.type",
 				"support.class",
-				"support.other.namespace.use.php",
+				"support.orther.namespace.use.php",
 				"meta.use.php",
 				"support.other.namespace.php",
 				"markup.changed.git_gutter",
@@ -435,7 +658,7 @@
 				"punctuation.definition.list_item.markdown"
 			],
 			"settings": {
-				"foreground": "#EEFFFF"
+				"foreground": "#c8c8c8"
 			}
 		},
 		{
@@ -528,7 +751,7 @@
 				"markup.quote"
 			],
 			"settings": {
-				"fontStyle": "italic"
+				"fontStyle": "italic",
 			}
 		},
 		{
@@ -593,7 +816,7 @@
 				"punctuation.section.class.end"
 			],
 			"settings": {
-				"foreground": "#EEFFFF"
+				"foreground": "#c8c8c8"
 			}
 		},
 		{
@@ -621,7 +844,7 @@
 				"markup.table"
 			],
 			"settings": {
-				"foreground": "#EEFFFF"
+				"foreground": "#c8c8c8"
 			}
 		}
 	]
