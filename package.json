@@ -17,5 +17,9 @@
         "path": "./themes/James' Dark Theme-color-theme.json"
       }
     ]
+  },
+  "repository": {
+  "type": "git",
+  "url": "https://github.com/james-berkheimer/james-dark"
   }
 }
