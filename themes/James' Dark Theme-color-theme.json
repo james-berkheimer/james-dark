@@ -1,5 +1,6 @@
 {
-	"name": "James' Dark Theme",
+	"name": "James Dark Theme",
+	"type": "dark",
 	"colors": {
 		"editor.background": "#303030",
 		"editor.foreground": "#c8c8c8",
